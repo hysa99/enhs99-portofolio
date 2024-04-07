@@ -16,7 +16,7 @@ export default function Home() {
           <span className="mx-2">|</span>
           <p className="flex items-center"><img className="h-6 w-6 mr-2" src="https://img.icons8.com/color/48/linkedin.png" alt="linkedin"/> Enea Hysa Linkedin Profile</p>
           <span className="mx-2">|</span>
-          <p className="flex items-center"><img className="h-6 w-6 mr-2" src="https://img.icons8.com/windows/32/github.png" alt="github"/> hysa99 Github Profile</p>
+          <p className="flex items-center"><img className="h-6 w-6 mr-2 rounded-full bg-white" src="https://img.icons8.com/windows/32/github.png" alt="github"/> hysa99 Github Profile</p>
         </div>
       </header>
 

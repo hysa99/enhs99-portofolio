@@ -16,13 +16,13 @@ export default function Home() {
           <span className="mx-2">|</span>
           <p className="flex items-center"><img className="h-6 w-6 mr-2" src="https://img.icons8.com/color/48/linkedin.png" alt="linkedin"/> Enea Hysa Linkedin Profile</p>
           <span className="mx-2">|</span>
-          <p className="flex items-center"><img className="h-6 w-6 mr-2" src="https://img.icons8.com/windows/32/github.png" alt="github"/> Enea Hysa Github Profile</p>
+          <p className="flex items-center"><img className="h-6 w-6 mr-2" src="https://img.icons8.com/windows/32/github.png" alt="github"/> hysa99 Github Profile</p>
         </div>
       </header>
 
       <hr className="my-8"/>
 
-      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 text-white">
         
         <div className="bg-gray-800 rounded-lg p-4 text-white">
           <h1 className="text-2xl font-bold mb-4">My Skills</h1>
@@ -36,33 +36,44 @@ export default function Home() {
           </ul>
         </div>
 
-        <div className="bg-gray-800 rounded-lg p-4  text-white">
+        <div className="bg-gray-800 rounded-lg p-4 text-white">
           <h1 className="text-2xl font-bold mb-4">My Experiences</h1>
-          <div>
-            <h2>Eder Studio</h2>
+          <div className="">
+            <h2 className="text-2xl">Eder Studio</h2>
+            <br></br>
             <p>Web Designer (Internship) - From Nov 2020 to Jan 2021</p>
+            <p className="bold text-2xl"><strong>Description of Job:</strong></p>
             <p>Learning About React js</p>
             <p>Creating from scratch the frontend of a Websites</p>
           </div>
+          <br></br>
+          <hr className="bg-blue-700 text-blue-700"></hr>
+          <br></br>
           <div>
-            <h2>Freelance | Self Employed (Working on personal projects)</h2>
+            <h2 className="text-2xl">Freelance | Self Employed (Working on personal projects)</h2>
+            <br></br>
             <p>Web Development - From Nov 2019 to Present</p>
+            <p className="bold text-2xl"><strong>Description of Job:</strong></p>
             <p>Create Websites for different purposes with all the important features such as CRUD functions</p>
             <p>React js | Django | HTML+CSS | Nextjs</p>
             <p>Learning New Things | Improving Skills</p>
           </div>
-          
+          <br></br>
+          <hr className="bg-blue-700 text-blue-700"></hr>
+          <br></br>
           <div>
-            <h2>MP (Revelop)</h2>
+            <h2 className="text-2xl">MP (Revelop)</h2>
+            <br></br>
             <p>Automation Tester | QA Automation Tester - From Oct 2021 to Present</p>
             <p>First Line Support | Integrations - From Dec 2022 to Present</p>
+            <p className="bold text-2xl"><strong>Description of Job:</strong></p>
             <p>Create Scripts for Automation</p>
             <p>Root Causes Analysis</p>
             <p>Implementing / Modifying New Solutions</p>
           </div>
         </div>
 
-        <div className="bg-gray-800 rounded-lg p-4  text-white">
+        <div className="bg-gray-800 rounded-lg p-4 text-white">
           <h1 className="text-2xl font-bold mb-4">My Interests</h1>
           <ul>
             <li className="flex items-center mb-2"><img className="h-6 w-6 mr-2" src="https://img.icons8.com/color/32/python--v1.png" alt="python--v1"/>Python</li>

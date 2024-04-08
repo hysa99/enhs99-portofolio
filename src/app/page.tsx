@@ -62,7 +62,7 @@ export default function Home() {
           <hr className="bg-blue-700 text-blue-700"></hr>
           <br></br>
           <div>
-            <h2 className="text-2xl">MP (Revelop)</h2>
+            <h2 className="text-2xl">Revelop</h2>
             <br></br>
             <p>Automation Tester | QA Automation Tester - From Oct 2021 to Present</p>
             <p>First Line Support | Integrations - From Dec 2022 to Present</p>

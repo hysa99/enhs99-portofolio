@@ -1,22 +1,23 @@
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-8 md:p-24">
-
+    <main className="flex flex-col items-center md:p-24">
+      
       <header>
         <div className="container flex justify-center items-center">
           <img className="rounded-full h-24 w-24 md:h-32 md:w-32" src="https://media.licdn.com/dms/image/D4D03AQG4STMtYTSY9w/profile-displayphoto-shrink_800_800/0/1695494328964?e=1717632000&v=beta&t=XYvDvTfygY1t2d6SjJ40nwsCPmgzkcs3rZkEUjUZ6nw" alt="profile picture"/>
           <h1 className="text-2xl md:text-4xl font-bold ml-4">Enea Hysa</h1>
         </div>
-        <div className="flex justify-center mt-4">
-          <p className="flex items-center"><img className="h-6 w-6 mr-2" src="https://img.icons8.com/color/32/new-post.png" alt="new-post"/> eneahysa4@gmail.com</p>
+        <div className="flex justify-center mt-4 grid grid-cols-2">
+          <a href="mailto:eneahysa4@gmail.com" type="email" id="email" className="flex items-center"><img className="h-6 w-6 mr-2" src="https://img.icons8.com/color/32/new-post.png" alt="new-post"/> eneahysa4@gmail.com</a>
           <span className="mx-2">|</span>
-          <p className="flex items-center"><img className="h-6 w-6 mr-2" src="https://img.icons8.com/flat-round/32/phone.png" alt="phone"/> (+355)/(0) 693857457</p>
+          <a href="tel:+355693857457" type="phone" id="phone" className="flex items-center"><img className="h-6 w-6 mr-2" src="https://img.icons8.com/flat-round/32/phone.png" alt="phone"/> (+355)/(0) 693857457</a>
           <span className="mx-2">|</span>
           <p className="flex items-center"><img className="h-6 w-6 mr-2" src="https://img.icons8.com/color/32/place-marker--v1.png" alt="place-marker--v1"/> Tirane, Albania</p>
           <span className="mx-2">|</span>
-          <p className="flex items-center"><img className="h-6 w-6 mr-2" src="https://img.icons8.com/color/48/linkedin.png" alt="linkedin"/> Enea Hysa Linkedin Profile</p>
+          <a href="https://www.linkedin.com/in/enea-hysa-320527181/" type="linkedin"  id="linkedin" className="flex items-center"><img className="h-6 w-6 mr-2" src="https://img.icons8.com/color/48/linkedin.png" alt="linkedin"/> Enea Hysa Linkedin Profile</a>
           <span className="mx-2">|</span>
-          <p className="flex items-center"><img className="h-6 w-6 mr-2 rounded-full bg-white" src="https://img.icons8.com/windows/32/github.png" alt="github"/> hysa99 Github Profile</p>
+          <a type="github" id="github" className="flex items-center"><img className="h-6 w-6 mr-2 rounded-full bg-white" src="https://img.icons8.com/windows/32/github.png" alt="github"/> hysa99 Github Profile</a>
+          <span className="mx-2">|</span>
         </div>
       </header>
 
@@ -62,7 +63,7 @@ export default function Home() {
           <hr className="bg-blue-700 text-blue-700"></hr>
           <br></br>
           <div>
-            <h2 className="text-2xl">Revelop</h2>
+            <h2 className="text-2xl">MP (Revelop)</h2>
             <br></br>
             <p>Automation Tester | QA Automation Tester - From Oct 2021 to Present</p>
             <p>First Line Support | Integrations - From Dec 2022 to Present</p>

@@ -92,17 +92,31 @@ export default function Home() {
 
       <section>
         <div>
-          <h1 className="text-2xl">My Projects</h1>
-          <code className="bg-red-700 text-white">
-           <section>
-            <h1 className="inline flex ">My Works on Video Editing  <img width="32" height="32" src="https://img.icons8.com/color/32/adobe-premiere-pro--v1.png" alt="adobe-premiere-pro--v1"/> | <img width="32" height="32" src="https://img.icons8.com/color/32/adobe-after-effects--v1.png" alt="adobe-after-effects--v1"/></h1>
-            <div>
-            <iframe width="720" height="640" src="https://www.youtube.com/embed/y_ENpW96POM?autoplay=1&mute=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            <hr></hr>
-            <iframe width="720" height="640" src="https://www.youtube.com/embed/44pDdoOKzHI?autoplay=1&mute=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            </div>
-           </section>
-          </code>
+        <h1 className="inline flex">
+  My Works on Video Editing
+  <img width="32" height="32" src="https://img.icons8.com/color/32/adobe-premiere-pro--v1.png" alt="adobe-premiere-pro--v1" /> | 
+  <img width="32" height="32" src="https://img.icons8.com/color/32/adobe-after-effects--v1.png" alt="adobe-after-effects--v1" />
+</h1>
+<div>
+  <iframe
+    width="720"
+    height="640"
+    src="https://www.youtube.com/embed/y_ENpW96POM?autoplay=1&mute=1"
+    frameBorder="0"
+    allow="autoplay; encrypted-media"
+    allowFullScreen
+  ></iframe>
+  <hr />
+  <iframe
+    width="720"
+    height="640"
+    src="https://www.youtube.com/embed/44pDdoOKzHI?autoplay=1&mute=1"
+    frameBorder="0"
+    allow="autoplay; encrypted-media"
+    allowFullScreen
+  ></iframe>
+</div>
+
         </div>
       </section>
 

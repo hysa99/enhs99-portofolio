@@ -102,7 +102,6 @@ export default function Home() {
     width="720"
     height="640"
     src="https://www.youtube.com/embed/y_ENpW96POM?autoplay=1&mute=1"
-    frameBorder="0"
     allow="autoplay; encrypted-media"
     allowFullScreen
   ></iframe>
@@ -111,7 +110,6 @@ export default function Home() {
     width="720"
     height="640"
     src="https://www.youtube.com/embed/44pDdoOKzHI?autoplay=1&mute=1"
-    frameBorder="0"
     allow="autoplay; encrypted-media"
     allowFullScreen
   ></iframe>

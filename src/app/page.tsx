@@ -1,36 +1,45 @@
-import { Button, Card, Navbar, NavbarBrand, NavbarCollapse, NavbarLink } from 'flowbite-react';
+import { Button, Card, Navbar, NavbarBrand, NavbarLink } from 'flowbite-react';
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-center p-4 md:p-24 bg-gray-900 text-white">
+    <main className="flex flex-col items-center inline justify-center p-4 md:p-24 bg-gray-900 text-white">
       <header className="w-full flex justify-center inline">
         <Navbar fluid={true} rounded={true}>
           <NavbarBrand href="/">
             <img
               src="https://i1.sndcdn.com/avatars-000972071749-qhy5yq-t500x500.jpg"
-              className="mr-3 h-6 sm:h-9 rounded-full"
+              className="mr-6 h-9 sm:h-9 rounded-full"
               alt="Profile"
             />
             <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
               Enea Hysa
             </span>
           </NavbarBrand>
-          <NavbarCollapse className="flex justify-between">
-      <NavbarLink href="mailto:eneahysa4@gmail.com">
-        Email
-      </NavbarLink>
-      <NavbarLink href="tel:+355693857457">
-        Phone
-      </NavbarLink>
-      <NavbarLink href="https://www.linkedin.com/in/enea-hysa-320527181/">
-        LinkedIn
-      </NavbarLink>
-      <NavbarLink href="https://github.com/hysa99">
-        GitHub
-      </NavbarLink>
-    </NavbarCollapse>
-
         </Navbar>
+
+
+        <Navbar style={{ listStyleType: 'none'}} className="flex inline p-6">
+      <NavbarLink style={{ textDecoration: 'none' }} className="flex inline p-4" href="mailto:eneahysa4@gmail.com">
+      <img width="26" height="26" src="https://img.icons8.com/color/26/new-post.png" alt="new-post"/>
+        email
+      </NavbarLink>
+      &emsp;
+      <NavbarLink style={{ textDecoration: 'none' }} className="flex inline" href="tel:+355693857457">
+      <img width="26" height="26" src="https://img.icons8.com/color/26/phone.png" alt="phone"/>
+        phone
+      </NavbarLink>
+      &emsp;
+      <NavbarLink style={{ textDecoration: 'none' }} className="flex inline" href="https://www.linkedin.com/in/enea-hysa-320527181/">
+      <img width="26" height="26" src="https://img.icons8.com/color/26/linkedin.png" alt="linkedin"/>
+        linkedIn
+      </NavbarLink>
+      &emsp;
+      <NavbarLink style={{ textDecoration: 'none' }} className="flex inline" href="https://github.com/hysa99">
+      <img width="26" height="26" src="https://img.icons8.com/ios-filled/26/github.png" alt="github"/>
+        gitHub
+      </NavbarLink>
+    </Navbar>
+
 
         <div className="mt-4 flex justify-center">
           <Button href="/EneaCV.pdf" target="_blank">
@@ -45,12 +54,12 @@ export default function Home() {
         <Card>
           <h2 className="text-2xl font-bold mb-4">My Skills</h2>
           <ul className="list-disc list-inside">
-            <li>Python</li>
-            <li>Django</li>
-            <li>React js</li>
-            <li>Automation Testing (Python + Selenium)</li>
-            <li>Web Design/Development</li>
-            <li>Figma</li>
+            <li className='inline flex'><img width="26" height="26" src="https://img.icons8.com/color/26/python--v1.png" alt="python--v1"/>Python</li>
+            <li className='inline flex'><img width="26" height="26" src="https://img.icons8.com/color/26/django.png" alt="django"/>Django</li>
+            <li className='inline flex'><img width="26" height="26" src="https://img.icons8.com/office/26/react.png" alt="react"/>React js</li>
+            <li className='inline flex'><img width="26" height="26" src="https://img.icons8.com/ios-glyphs/26/selenium-test-automation.png" alt="selenium-test-automation"/>Automation Testing (Python + Selenium)</li>
+            <li className='inline flex'><img width="26" height="26" src="https://img.icons8.com/color-glass/26/google-code.png" alt="google-code"/>Web Design/Development</li>
+            <li className='inline flex'><img width="26" height="26" src="https://img.icons8.com/color/26/figma--v1.png" alt="figma--v1"/>Figma</li>
           </ul>
         </Card>
 
@@ -59,31 +68,42 @@ export default function Home() {
           <div>
             <h3 className="text-xl">Eder Studio</h3>
             <p>Web Designer (Internship) - Nov 2020 to Jan 2021</p>
-            <p>Description: Learning React js, creating frontends from scratch.</p>
+            <p>Description:
+              Learning React js, creating frontends from scratch.</p>
+          </div>
+          <hr className="my-4" />
+          <div>
+            <h3 className="text-xl">Freelancer | Self Employed</h3>
+            <p>Video Editing - Nov 2020 </p>
+            <p>Description:
+              Edited and produced engaging video content for a travel YouTube channel, utilizing tools such as Canva, Adobe
+            Premiere Pro, and DaVinci Resolve.</p>
           </div>
           <hr className="my-4" />
           <div>
             <h3 className="text-xl">Freelance</h3>
             <p>Web Development - Nov 2019 to Present</p>
-            <p>Description: Building websites, CRUD functions, using React js, Django, etc.</p>
+            <p>Description:
+              Building websites, CRUD functions, using React js, Django, etc.</p>
           </div>
           <hr className="my-4" />
           <div>
             <h3 className="text-xl">MP (Revelop)</h3>
             <p>QA Automation Tester - Oct 2021 to Present</p>
-            <p>Description: Automation scripts, root cause analysis, implementing solutions.</p>
+            <p>Description:
+              Automation scripts, root cause analysis, implementing solutions.</p>
           </div>
         </Card>
 
         <Card>
           <h2 className="text-2xl font-bold mb-4">My Interests</h2>
           <ul className="list-disc list-inside">
-            <li>Python</li>
-            <li>Django</li>
-            <li>React js</li>
-            <li>Automation Testing</li>
-            <li>Web Design/Development</li>
-            <li>Figma</li>
+            <li className='inline flex'><img width="26" height="26" src="https://img.icons8.com/color/26/python--v1.png" alt="python--v1"/>Python</li>
+            <li className='inline flex'><img width="26" height="26" src="https://img.icons8.com/color/26/django.png" alt="django"/>Django</li>
+            <li className='inline flex'><img width="26" height="26" src="https://img.icons8.com/office/26/react.png" alt="react"/>React js</li>
+            <li className='inline flex'><img width="26" height="26" src="https://img.icons8.com/ios-glyphs/26/selenium-test-automation.png" alt="selenium-test-automation"/>Automation Testing (Python + Selenium)</li>
+            <li className='inline flex'><img width="26" height="26" src="https://img.icons8.com/color-glass/26/google-code.png" alt="google-code"/>Web Design/Development</li>
+            <li className='inline flex'><img width="26" height="26" src="https://img.icons8.com/color/26/figma--v1.png" alt="figma--v1"/>Figma</li>
           </ul>
         </Card>
       </section>
@@ -109,8 +129,8 @@ export default function Home() {
             allow="autoplay; encrypted-media"
             allowFullScreen
           ></iframe>
-        </div>
-      </section>
+          </div>
+          </section>
 
       <hr className="my-8 border-gray-700" />
 

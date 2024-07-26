@@ -6,8 +6,13 @@ import { useState } from 'react';
 import { CarouselsGlobetrotterHub, CarouselsTraveblo } from '../components/component/carousels';
 // import eneacv from "public/EneaCV.pdf";
 
+
+
+type CarouselType = null | 'traveblo' | 'globetrotter' | 'videoediting';
+
+
 export default function Home() {
-  const [activeCarousel, setActiveCarousel] = useState(null);
+  const [activeCarousel, setActiveCarousel] = useState<CarouselType>(null);
 
 
   
@@ -127,7 +132,7 @@ export default function Home() {
       <h1 className='flex text-4xl font-weight-500 text-center'>My Projects!</h1>
       &emsp;
       <div className='flex inline'>
-      <a className='bg-green' href="#!" onClick={() => setActiveCarousel('traveblo')}>
+      <a href="#!" onClick={() => setActiveCarousel('traveblo')}>
       <img width="40" height="40" src="https://img.icons8.com/ios/40/travel-agency.png" alt="travel-agency"/>
         Traveblo Project
       </a>

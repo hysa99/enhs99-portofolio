@@ -1,6 +1,16 @@
+'use client'
+
+
 import { Button, Card, Navbar, NavbarBrand, NavbarLink } from 'flowbite-react';
+import { useState } from 'react';
+import { CarouselsGlobetrotterHub, CarouselsTraveblo } from '../components/component/carousels';
+// import eneacv from "public/EneaCV.pdf";
 
 export default function Home() {
+  const [activeCarousel, setActiveCarousel] = useState(null);
+
+
+  
   return (
     <main className="flex flex-col items-center inline justify-center p-4 md:p-24 bg-gray-900 text-white">
       <header className="w-full flex justify-center inline">
@@ -16,7 +26,6 @@ export default function Home() {
             </span>
           </NavbarBrand>
         </Navbar>
-
 
         <Navbar style={{ listStyleType: 'none'}} className="flex inline p-6">
       <NavbarLink style={{ textDecoration: 'none' }} className="flex inline p-4" href="mailto:eneahysa4@gmail.com">
@@ -41,10 +50,12 @@ export default function Home() {
     </Navbar>
 
 
-        <div className="mt-4 flex justify-center">
-          <Button href="/EneaCV.pdf" target="_blank">
-            Download my CV
-          </Button>
+        <div className="flex justify-center">
+        <a href="/puvlic/EneaCV.pdf" download="EneaCV.pdf">
+        <Button>
+          Download my CV
+        </Button>
+      </a>
         </div>
       </header>
 
@@ -109,32 +120,40 @@ export default function Home() {
       </section>
 
       <hr className="my-8 border-gray-700" />
-
-      <section className="w-full">
-        <h2 className="text-2xl font-bold mb-4">My Works on Video Editing</h2>
-        <div className="flex flex-wrap gap-4 justify-center">
-          <iframe
-            width="300"
-            height="200"
-            src="https://www.youtube.com/embed/y_ENpW96POM"
-            frameBorder="0"
-            allow="autoplay; encrypted-media"
-            allowFullScreen
-          ></iframe>
-          <iframe
-            width="300"
-            height="200"
-            src="https://www.youtube.com/embed/44pDdoOKzHI"
-            frameBorder="0"
-            allow="autoplay; encrypted-media"
-            allowFullScreen
-          ></iframe>
-          </div>
-          </section>
-
       <hr className="my-8 border-gray-700" />
+      &emsp;
 
-      <section className="w-full">
+      <section>
+      <h1 className='flex text-4xl font-weight-500 text-center'>My Projects!</h1>
+      &emsp;
+      <div className='flex inline'>
+      <a className='bg-green' href="#!" onClick={() => setActiveCarousel('traveblo')}>
+      <img width="40" height="40" src="https://img.icons8.com/ios/40/travel-agency.png" alt="travel-agency"/>
+        Traveblo Project
+      </a>
+      <br />
+      &emsp;
+      <a href="#!" onClick={() => setActiveCarousel('globetrotter')}>
+      <img width="40" height="40" src="https://img.icons8.com/wired/40/social-network.png" alt="social-network"/>
+        GlobetrutterHub Project 
+      </a>
+      <br />
+      &emsp;
+      <a href="#!" onClick={() => setActiveCarousel('videoediting')}>
+      <img width="40" height="40" src="https://img.icons8.com/dotty/40/video-editing.png" alt="video-editing"/>
+        Video Editing Projects 
+      </a>
+      </div>
+
+      {/* Conditional rendering based on state */}
+      {activeCarousel === 'traveblo' && <CarouselsTraveblo />}
+      {activeCarousel === 'globetrotter' && <CarouselsGlobetrotterHub />}
+      {activeCarousel === 'videoediting' && <VideoEditing />}
+    </section>
+
+&emsp;
+{/* 
+    <section className="w-full">
         <h2 className="text-2xl font-bold mb-4">Blog</h2>
         <div className="flex flex-wrap gap-4">
           <Card>
@@ -148,7 +167,54 @@ export default function Home() {
             <Button>Read More</Button>
           </Card>
         </div>
-      </section>
+      </section> */}
+
+      &emsp;
+
     </main>
   );
 }
+
+
+
+function VideoEditing(){
+  return (
+    <div className='container'>
+      <h1>Video Editing Projects</h1>
+      <section className="w-full">
+        <h2 className="text-2xl font-bold mb-4">My Works on Video Editing</h2>
+        <div className="flex flex-wrap gap-4 justify-center">
+          <iframe
+          title='Top Destinations to Visit for Solo Travelers'
+            width="300"
+            height="200"
+            src="https://www.youtube.com/embed/y_ENpW96POM"
+            frameBorder="0"
+            allow="autoplay; encrypted-media"
+            allowFullScreen
+          ></iframe>
+          <iframe
+          title='Top Destinations you should visit to Barcelona'
+            width="300"
+            height="200"
+            src="https://www.youtube.com/embed/44pDdoOKzHI"
+            frameBorder="0"
+            allow="autoplay; encrypted-media"
+            allowFullScreen
+          ></iframe>
+          <iframe
+            title='3 best places to visit in Europe'
+            width="300"
+            height="200"
+            // embeded this  src="https://youtu.be/BudLQQ6sRxY?si=h869E0hvVtkeJFoT"
+            src="https://www.youtube.com/embed/BudLQQ6sRxY"
+            frameBorder="0"
+            allow="autoplay; encrypted-media"
+            allowFullScreen
+          ></iframe>
+          </div>
+          </section>
+    </div>
+  )
+}
+

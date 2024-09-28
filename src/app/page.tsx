@@ -14,7 +14,7 @@ export default function Home() {
           height={38}
           priority
         />
-		<a className="flex text-2xl" href="eneahysa-portofolio.vercel.app">Click here to see my Latest Portofolio Website !</a>
+		<a className="flex text-2xl" href="https://eneahysa-portofolio.vercel.app/">Click here to see my Latest Portofolio Website !</a>
 		</main>
     </div>
   );

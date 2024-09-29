@@ -14,7 +14,10 @@ export default function Home() {
           height={38}
           priority
         />
-		<a className="flex text-2xl" href="https://eneahysa-portofolio.vercel.app/">Click here to see my Latest Portofolio Website !</a>
+		<div className="flex inline">
+		<a className="flex text-2xl" href="eneahysa-portofolio.vercel.app">Click here to see my Latest Portofolio Website !</a>
+		<img className="flex inline" width="48" height="48" src="https://img.icons8.com/color/48/nui2.png" alt="nui2"/>
+		</div>
 		</main>
     </div>
   );
